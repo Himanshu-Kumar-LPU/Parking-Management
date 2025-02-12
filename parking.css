@@ -1,0 +1,300 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6) contrast(1.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#nav-link {
+    font-size: 25px;
+    font-weight: 550;
+    color: springgreen;
+    text-shadow: 0 2px 5px rgba(0, 255, 0, 0.7);
+    transition: color 0.3s;
+}
+
+#nav-link:hover {
+    color: white;
+}
+
+.lni-car {
+    font-size: 35px;
+    color: yellow;
+    text-shadow: 0 2px 5px rgba(255, 255, 0, 0.7);
+}
+
+form {
+    width: 20rem;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form-label {
+    color: yellow;
+    font-weight: 650;
+    font-size: 14px;
+}
+
+.form-control:focus, .form-control {
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: yellow;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(3, 3, 3) inset !important;
+    -webkit-text-fill-color: blue !important;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#parkingtable {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: yellow;
+    font-size: 14px;
+    width: 16rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slideIn 1s ease-out;
+}
+
+th {
+    font-size: 16px;
+    font-weight: 600;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid yellow;
+    text-align: center;
+    padding: 12px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.2);
+}
+
+td:hover {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+#receipttable {
+    color: white;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.9));
+    width: 34rem;
+    font-size: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#receipttable td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.2);
+    text-align: left;
+}
+
+.table {
+    color: yellow;
+    border-color: yellow;
+    width: 100%;
+}
+
+#parkingHead {
+    color: yellow;
+    font-size: 26px;
+    text-align: center;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 15px;
+    padding: 20px;
+    width: 34rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(30, 30, 30, 0.95));
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#receiptHead {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5rem;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, yellow, gold);
+    width: 36rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#receiptDescription {
+    color: yellow;
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.modal-dialog, .modal-content {
+    width: 24rem;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    animation: slideIn 1s ease-in-out;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #ff9900, #ffcc00);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal-body {
+    padding: 20px;
+    color: yellow;
+    font-size: 16px;
+    background: rgba(30, 30, 30, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-body table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.modal-body table th, .modal-body table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 0 0 15px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#closeBtn, #downloadBtn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+#closeBtn {
+    background: linear-gradient(135deg, red, darkred);
+    color: white;
+}
+
+#closeBtn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+#downloadBtn {
+    background: linear-gradient(135deg, yellow, gold);
+    color: black;
+}
+
+#downloadBtn:hover {
+    background: gold;
+    transform: scale(1.05);
+}
+
+#footer {
+    color: yellow;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
